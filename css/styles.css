@@ -1,6 +1,18 @@
 .container-fluid {
-  padding-left: 0px;
+  /*padding-left: 0px;*/
   /*padding-right: 0px !important;*/
+}
+
+
+
+@media (min-width: 576px){
+.card-deck .card:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.card-img-top {
+  border-radius: 0;
 }
 
 .btn-primary:hover {
@@ -23,6 +35,31 @@ body {
   /*font-family: "Whitney";*/
 }
 
+.col-4 {
+  border-style: solid;
+  border-color: red;
+}
+/*.col-5 {
+    border-style: solid;
+    border-color: maroon;
+}*/
+.col-6 {
+  border-style: solid;
+  border-color: pink;
+}
+/*.col-7 {
+  border-style: solid;
+  border-color: yellow;
+}*/
+.col-8 {
+  border-style: solid;
+  border-color: magenta;
+}
+/*div {
+  border-style: solid;
+  border-color: orange;
+}*/
+
 .row {
   /*border-style: solid;
   border-color: black;*/
@@ -37,7 +74,7 @@ body {
 
 #second-card {
   background-color: #e3e8ed;
-  max-width: 70% !important;
+  /*max-width: 70% !important;*/
 }
 
 #logo {
@@ -45,7 +82,7 @@ padding-top: 8px;
 }
 
 #join-cta {
-  margin-left: 60%;
+  margin-left: 320px;
 }
 
 #imagery-title {
@@ -113,7 +150,23 @@ background-color: #008091;
   /*color: #fff;*/
 }
 
+.card {
+  border: none;
+  border-radius: 0;
+}
+
 .card-block .cards{
   text-align: center;
-  padding: 8px;
+  /*padding: 8px;*/
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.icon-block {
+  flex: 1 0 0%;
+  flex-direction: column;
+  position: relative;
 }
